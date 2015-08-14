@@ -1,0 +1,35 @@
+{
+    "name": "php-pdf/dompdf-adapter",
+    "description": "Dompdf adapter for php-pdf/adapter",
+    "license": "MIT",
+    "keywords": ["pdf", "adapter", "dompdf"],
+    "homepage": "https://github.com/php-pdf/adapter",
+    "authors": [
+        {
+            "name": "Barry vd. Heuvel",
+            "email": "barryvdh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "psr/http-message": "~1.0",
+        "php-pdf/adapter": "0.1.x",
+        "dompdf/dompdf": "0.7.x",
+        "zendframework/zend-diactoros": "^1.1"
+    },
+    "provide": {
+        "php-pdf/adapter-implementation": "0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pdf\\Adapter\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
